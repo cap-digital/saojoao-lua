@@ -64,12 +64,23 @@
     animation: rise 0.8s ease 0.15s forwards;
   }
 
+  .nome {
+    font-family: 'Alfa Slab One', serif;
+    font-size: clamp(20px, 5vw, 28px);
+    color: var(--offblack);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 26px;
+    opacity: 0;
+    animation: rise 0.8s ease 0.25s forwards;
+  }
+
   h1 {
     font-family: 'Alfa Slab One', serif;
     font-weight: 400;
     font-size: clamp(34px, 9vw, 60px);
     line-height: 1.12;
-    margin: 26px 0 10px;
+    margin: 6px 0 10px;
     color: var(--offblack);
     text-transform: uppercase;
     opacity: 0;
@@ -297,7 +308,7 @@
 
   @media (prefers-reduced-motion: reduce) {
     .bunting svg, .flame, .ember::after { animation: none; }
-    .eyebrow, h1, .sub, .fire, .stack { animation: none; opacity: 1; }
+    .eyebrow, h1, .sub, .fire, .stack, .nome { animation: none; opacity: 1; }
     .signature { transition: none; }
   }
 
@@ -345,6 +356,7 @@
   <main class="wrap">
     <section class="hero">
       <span class="eyebrow">São João 2026</span>
+      <p class="nome">Lua,</p>
       <h1>Que a nossa parceria continue <span class="acesa">acesa</span></h1>
       <p class="sub">Uma lembrança do time CAP.CO para você</p>
     </section>
